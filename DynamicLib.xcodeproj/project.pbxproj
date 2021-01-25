@@ -10,6 +10,11 @@
 		6520DB5525BE618600A4A1B5 /* DynamicLib.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6520DB4B25BE618600A4A1B5 /* DynamicLib.framework */; };
 		6520DB5A25BE618700A4A1B5 /* DynamicLibTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 6520DB5925BE618700A4A1B5 /* DynamicLibTests.m */; };
 		6520DB5C25BE618700A4A1B5 /* DynamicLib.h in Headers */ = {isa = PBXBuildFile; fileRef = 6520DB4E25BE618600A4A1B5 /* DynamicLib.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		6520DB6B25BE61AB00A4A1B5 /* NSString+Hash.m in Sources */ = {isa = PBXBuildFile; fileRef = 6520DB6725BE61AB00A4A1B5 /* NSString+Hash.m */; };
+		6520DB6C25BE61AB00A4A1B5 /* StaticLibTool.m in Sources */ = {isa = PBXBuildFile; fileRef = 6520DB6825BE61AB00A4A1B5 /* StaticLibTool.m */; };
+		6520DB6D25BE61AB00A4A1B5 /* StaticLibTool.h in Headers */ = {isa = PBXBuildFile; fileRef = 6520DB6925BE61AB00A4A1B5 /* StaticLibTool.h */; };
+		6520DB6E25BE61AB00A4A1B5 /* NSString+Hash.h in Headers */ = {isa = PBXBuildFile; fileRef = 6520DB6A25BE61AB00A4A1B5 /* NSString+Hash.h */; };
+		6520DB7325BE63E600A4A1B5 /* 【投稿】Xcode 创建静态库和动态库 - CocoaChina_一站式开发者成长社区.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 6520DB7225BE63E600A4A1B5 /* 【投稿】Xcode 创建静态库和动态库 - CocoaChina_一站式开发者成长社区.pdf */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -29,6 +34,11 @@
 		6520DB5425BE618600A4A1B5 /* DynamicLibTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DynamicLibTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		6520DB5925BE618700A4A1B5 /* DynamicLibTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DynamicLibTests.m; sourceTree = "<group>"; };
 		6520DB5B25BE618700A4A1B5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		6520DB6725BE61AB00A4A1B5 /* NSString+Hash.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+Hash.m"; sourceTree = "<group>"; };
+		6520DB6825BE61AB00A4A1B5 /* StaticLibTool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = StaticLibTool.m; sourceTree = "<group>"; };
+		6520DB6925BE61AB00A4A1B5 /* StaticLibTool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StaticLibTool.h; sourceTree = "<group>"; };
+		6520DB6A25BE61AB00A4A1B5 /* NSString+Hash.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+Hash.h"; sourceTree = "<group>"; };
+		6520DB7225BE63E600A4A1B5 /* 【投稿】Xcode 创建静态库和动态库 - CocoaChina_一站式开发者成长社区.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = "【投稿】Xcode 创建静态库和动态库 - CocoaChina_一站式开发者成长社区.pdf"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -71,7 +81,12 @@
 		6520DB4D25BE618600A4A1B5 /* DynamicLib */ = {
 			isa = PBXGroup;
 			children = (
+				6520DB7225BE63E600A4A1B5 /* 【投稿】Xcode 创建静态库和动态库 - CocoaChina_一站式开发者成长社区.pdf */,
 				6520DB4E25BE618600A4A1B5 /* DynamicLib.h */,
+				6520DB6A25BE61AB00A4A1B5 /* NSString+Hash.h */,
+				6520DB6725BE61AB00A4A1B5 /* NSString+Hash.m */,
+				6520DB6925BE61AB00A4A1B5 /* StaticLibTool.h */,
+				6520DB6825BE61AB00A4A1B5 /* StaticLibTool.m */,
 				6520DB4F25BE618600A4A1B5 /* Info.plist */,
 			);
 			path = DynamicLib;
@@ -93,6 +108,8 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6520DB6D25BE61AB00A4A1B5 /* StaticLibTool.h in Headers */,
+				6520DB6E25BE61AB00A4A1B5 /* NSString+Hash.h in Headers */,
 				6520DB5C25BE618700A4A1B5 /* DynamicLib.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -176,6 +193,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6520DB7325BE63E600A4A1B5 /* 【投稿】Xcode 创建静态库和动态库 - CocoaChina_一站式开发者成长社区.pdf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -193,6 +211,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6520DB6B25BE61AB00A4A1B5 /* NSString+Hash.m in Sources */,
+				6520DB6C25BE61AB00A4A1B5 /* StaticLibTool.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
